@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"; 
 function Navbar(){
     return(
         <>
@@ -10,11 +11,11 @@ function Navbar(){
                         </a>
                         <div className=" flex items-center">
                             <ul className="flex font-semibold" > 
-                                <li className="px-4 text-blue-500 p-2"><a href="">Home</a></li>
-                                <li className="px-4 hover:text-blue-500 hover:bg-blue-950 p-2 rounded-xl hover:transition  "><a href="">Quote</a></li>
-                                <li className="px-4 hover:text-blue-500 hover:bg-blue-950 p-2 rounded-xl hover:transition "><a href="">Resturents</a></li>
-                                <li className="px-4 hover:text-blue-500 hover:bg-blue-950 p-2 rounded-xl hover:transition "><a href="">Foods</a></li>
-                                <li className="px-4 hover:text-blue-500 hover:bg-blue-950 p-2 rounded-xl hover:transition "><a href="">Contact</a></li>
+                                <li className="px-4 text-blue-500 p-2"><Link to ="/">Home</Link></li>
+                                <li className="px-4 hover:text-blue-500 hover:bg-blue-950 p-2 rounded-xl hover:transition  "><Link to ="/qoute">Quote</Link></li>
+                                <li className="px-4 hover:text-blue-500 hover:bg-blue-950 p-2 rounded-xl hover:transition "><Link to ="/">Restaurent</Link></li>
+                                <li className="px-4 hover:text-blue-500 hover:bg-blue-950 p-2 rounded-xl hover:transition "><Link to ="/">Foods</Link></li>
+                                <li className="px-4 hover:text-blue-500 hover:bg-blue-950 p-2 rounded-xl hover:transition "><Link to ="/">Contact US </Link></li>
                             </ul>
                         </div>
                         <div className="flex items-center">
